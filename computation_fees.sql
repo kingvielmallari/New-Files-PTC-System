@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 26, 2025 at 04:19 PM
+-- Generation Time: May 28, 2025 at 03:58 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -46,16 +46,17 @@ CREATE TABLE `computation_fees` (
 --
 
 INSERT INTO `computation_fees` (`id`, `program`, `unit_new`, `unit_old`, `lab_old`, `lab_new`, `comp_new`, `comp_old`, `nstp_old`, `nstp_new`, `status`) VALUES
-(2, 'CHRM', 400, 300, 300, 400, 400, 300, 0, 0, 'Enabled'),
-(3, 'CCS', 400, 300, 300, 400, 400, 300, 0, 0, 'Enabled'),
+(2, 'CHRM', 400, 300, 300, 400, 400, 300, 150, 200, 'Enabled'),
+(3, 'CCS', 400, 300, 300, 400, 400, 300, 150, 150, 'Enabled'),
 (4, 'BSBA', 400, 300, 300, 400, 400, 300, 0, 0, 'Enabled'),
 (5, 'ACET', 400, 300, 300, 400, 400, 300, 0, 0, 'Enabled'),
 (6, 'ABA', 400, 300, 300, 400, 400, 300, 0, 0, 'Enabled'),
-(7, 'AAIS', 400, 300, 300, 400, 400, 300, 0, 0, 'Enabled'),
-(8, 'BSAIS', 400, 300, 300, 400, 400, 300, 0, 0, 'Enabled'),
-(9, 'BSIT', 2, 1, 3, 4, 6, 5, 7, 8, 'Enabled'),
-(10, 'BSOA', 400, 300, 300, 400, 400, 300, 0, 0, 'Enabled'),
-(13, 'COA', 400, 300, 300, 400, 400, 300, 300, 400, 'Enabled');
+(7, 'AAIS', 500, 400, 400, 500, 500, 400, 300, 300, 'Enabled'),
+(8, 'AHRD', 500, 400, 400, 500, 500, 400, 300, 300, 'Enabled'),
+(9, 'BSIT', 400, 300, 300, 400, 400, 300, 150, 150, 'Enabled'),
+(10, 'BSOA', 400, 300, 300, 400, 400, 300, 150, 150, 'Enabled'),
+(13, 'COA', 400, 300, 300, 400, 400, 300, 150, 150, 'Enabled'),
+(15, 'AHRT', 500, 400, 400, 500, 500, 400, 300, 300, 'Enabled');
 
 --
 -- Indexes for dumped tables
@@ -75,7 +76,7 @@ ALTER TABLE `computation_fees`
 -- AUTO_INCREMENT for table `computation_fees`
 --
 ALTER TABLE `computation_fees`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
